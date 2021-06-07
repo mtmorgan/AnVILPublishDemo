@@ -1,0 +1,44 @@
+---
+title: "An Introduction to the AnVILPublishDemo package"
+author:
+- name: "Martin Morgan"
+  affiliation: "Roswell Park Comprehensive Cancer Center"
+  email: mtmorgan.bioc@gmail.com
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{A_Introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+pkgs <- "mtmorgan/AnVILPublishDemo"
+to_install <- pkgs[!basename(pkgs) %in% rownames(installed.packages())]
+if (length(to_install))
+    BiocManager::install(to_install, ask = FALSE)
+library(AnVILPublishDemo)
+```
+
+This package illustrates a vignette, with an executable code chunk
+showing how the `helper()` function displays an inspirational (?)
+message.
+
+```{r}
+helper()
+```
+
+# Session info
+
+It's a convention to include in the vignette the information about the
+packagaes and versions used.
+
+```{r}
+sessionInfo()
+```

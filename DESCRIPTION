@@ -1,0 +1,24 @@
+Package: AnVILPublishDemo
+Title: Simple Demonstration of AnVILPublish Functionality
+Version: 0.0.1
+Date: 2021-06-07
+Authors@R: 
+    c(person(
+        given = "Martin",
+        family = "Morgan",
+        role = c("aut", "cre"),
+        email = "mtmorgan.bioc@gmail.com",
+        comment = c(ORCID = "0000-0002-5874-8148")
+    ))
+Description: AnVILPublish is a way to transform R / Bioconductor
+    packages, especially vignettes, in Jupyter notebooks for use in
+    the AnVIL computational environment.
+License: Artistic-2.0
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    knitr,
+    rmarkdown,
+    BiocManager
+VignetteBuilder: knitr
